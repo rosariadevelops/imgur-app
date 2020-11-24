@@ -1,0 +1,30 @@
+.params {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1100px;
+    transition: 300ms ease;
+    padding: 0 40px;
+    margin: 0 auto 15px;
+}
+.paramsRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px) {
+    .params {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .params {
+        flex-direction: column;
+    }
+    .paramsRight {
+        margin-top: 20px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,24 @@
+.modalDetails h3 {
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 30px;
+    margin: 20px 0 0;
+}
+.modalDetails p {
+    color: hsla(0, 0%, 100%, 0.9);
+    font-size: 16px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+}
+.tags div {
+    background: #6913fe;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+}

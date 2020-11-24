@@ -1,0 +1,16 @@
+.imgDetails {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 20px;
+}
+.imgDetails div {
+    margin-right: 30px;
+    opacity: 0.6;
+}
+.imgDetails div span {
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

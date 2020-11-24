@@ -1,0 +1,71 @@
+.showViral {
+    padding-left: 20px;
+    transition: 300ms ease;
+}
+
+.tooltipCtr {
+    position: absolute;
+    width: 90px;
+    margin-top: -36px;
+    margin-left: -31px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms ease;
+}
+.tooltip {
+    background-color: #36be7d;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+}
+.tooltip div {
+    font-weight: 600px;
+}
+.arrow {
+    width: 90px;
+    height: 8px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    bottom: -8px;
+}
+.arrow:after {
+    content: '';
+    position: absolute;
+    left: 37px;
+    top: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: #36be7d;
+    transform: rotate(45deg);
+}
+
+.showViral button {
+    background: none;
+    border: none;
+    color: #36be7d;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 300ms ease;
+    opacity: 0.7;
+    outline: none;
+}
+
+.showViral button:hover {
+    opacity: 1;
+}
+.showViral:hover .tooltipCtr {
+    margin-top: -42px;
+    visibility: visible;
+    opacity: 1;
+    transition: 300ms ease;
+}
+
+@media screen and (max-width: 768px) {
+    .showViral button {
+        font-size: 24px;
+        opacity: 1;
+    }
+}

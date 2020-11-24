@@ -1,0 +1,82 @@
+.imgurCard {
+    width: auto;
+    /* max-width: 240px; */
+    height: auto;
+    color: white;
+    margin-bottom: 30px;
+    background-color: #2e3035;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+    transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    cursor: pointer;
+    position: relative;
+}
+.imgurCard:hover {
+    background-color: #3b3e44;
+}
+
+.imgurCard a {
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cardTop {
+    overflow: hidden;
+}
+.cardBottom {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.cardMedia,
+.cardMedia img,
+.cardMedia video {
+    max-width: 100%;
+    height: auto;
+}
+.cardMedia {
+    background: linear-gradient(165deg, rgb(105, 216, 202) 0%, rgb(53, 146, 255) 50%, rgb(156, 49, 255) 100%);
+    margin-bottom: -4px;
+}
+.imgurCard:nth-child(even) .cardMedia {
+    padding: 3px;
+}
+.imgurCard:nth-child(1) .cardMedia {
+    margin-bottom: -4px;
+}
+.cardDesc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 100px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.cardDetails {
+    display: flex;
+    justify-content: space-between;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 13px;
+    opacity: 0.6;
+    padding: 6px 0 12px;
+}
+
+.cardDetails span {
+    padding-left: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .cardDesc {
+        font-size: 20px;
+    }
+    .cardDetails {
+        font-size: 18px;
+        padding: 6px 0 20px;
+    }
+}
