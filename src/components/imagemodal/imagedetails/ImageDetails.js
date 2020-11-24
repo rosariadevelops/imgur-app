@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ImageDetails.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faEye, faArrowAltCircleUp, faArrowAltCircleDown } from '@fortawesome/fontawesome-free';
+import { faStar, faEye, faArrowAltCircleUp, faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { formatThousand } from '../../../hooks/numberrendering/numberrendering';
 
 const ImageDetails = ({ image }) => {

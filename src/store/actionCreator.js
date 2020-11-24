@@ -1,5 +1,5 @@
-import { GET_IMAGES, GET_USER } from './actions';
-import { getImages, getUser } from '../api/imgur';
+import { GET_IMAGES, GET_USER } from './actions.js';
+import { getImages, getUser } from './../api/imgur.js';
 
 export const showImages = (section, sort, window, showViral) => {
     let urlParameters = '';

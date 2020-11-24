@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Imagecard.module.css';
 import useModal from '../../hooks/modal/useModal';
 import Modal from '../../hooks/modal/Modal';
-import { faEye, faArrowAltCircleUp, faArrowAltCircleDown } from '@fortawesome/fontawesome-free';
+import { faEye, faArrowAltCircleUp, faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { formatThousand } from '../../hooks/numberrendering/numberrendering';
 

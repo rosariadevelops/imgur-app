@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ShowViral.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFire } from '@fortawesome/fontawesome-free';
+import { faFire } from '@fortawesome/free-solid-svg-icons';
 
 const ShowViral = (props) => {
     const flame = <FontAwesomeIcon icon={faFire} />;
