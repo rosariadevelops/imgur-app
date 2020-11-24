@@ -15,7 +15,6 @@ const ImageCard = ({ image }) => {
     const downK = formatThousand(image.downs);
 
     const imageDetails = image.images[0];
-    const hasDescription = imageDetails.description !== null;
     const { isVisible, openModal, closeModal } = useModal();
 
     return (

@@ -24,7 +24,6 @@ const useDropdown = (label, defaultTitle, paramsObj) => {
 
     const DropdownComponent = () => (
         <div className={styles.drpCtr}>
-            {/* <div className={styles.drpTitle}>{dropContent}</div> */}
             <label htmlFor={label}>
                 <select value={dropContent} name="drpSelect" className={styles.dropdown} onChange={(e) => handleChangeParam(e)}>
                     {optionsList &&
