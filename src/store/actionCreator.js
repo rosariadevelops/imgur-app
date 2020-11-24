@@ -1,5 +1,5 @@
 import { GET_IMAGES, GET_USER } from './actions.js';
-import imgur from './../api/imgur.js';
+import { getImages, getUser } from '../api/imgur';
 
 export const showImages = (section, sort, window, showViral) => {
     let urlParameters = '';
@@ -11,8 +11,7 @@ export const showImages = (section, sort, window, showViral) => {
     }
 
     return (dispatch) => {
-        imgur
-            .getImages(urlParameters)
+        getImages(urlParameters)
             .then((res) => {
                 const { data } = res.data;
                 dispatch({
@@ -28,8 +27,7 @@ export const showUser = (user) => {
     let urlParameters = `account/${user}`;
 
     return (dispatch) => {
-        imgur
-            .getUser(urlParameters)
+        getUser(urlParameters)
             .then((res) => {
                 const { data } = res.data;
                 dispatch({
