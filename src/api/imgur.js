@@ -1,4 +1,5 @@
-const { CLIENT_ID } = require('../secrets.json');
+// const { CLIENT_ID } = require('./../secrets.json');
+import { CLIENT_ID } from './../secrets.json';
 const axios = require('axios');
 const FormData = require('form-data');
 let data = new FormData();
