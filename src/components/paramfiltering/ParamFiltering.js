@@ -4,7 +4,7 @@ import Section from '../parameters/Section';
 import Sort from '../parameters/Sort';
 import Window from '../parameters/Window';
 import ShowViral from '../parameters/showViral/ShowViral';
-import { showImages } from '../../store/actionCreator';
+import { showImages } from '../../store/actions';
 import styles from './ParamFiltering.module.css';
 
 const ParamFiltering = () => {

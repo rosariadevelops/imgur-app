@@ -9,9 +9,10 @@ const rootReducer = (state = initialState, action) => {
             images: action.images,
         });
     } else if (action.type === 'GET_USER') {
-        state = Object.assign({}, state, {
+        state = {
+            ...state,
             user: action.user,
-        });
+        };
     }
     return state;
 };

@@ -14,7 +14,7 @@ let config = {
     data: data,
 };
 
-module.exports.getImages = async function (apiCall) {
+export const getImages = async (apiCall) => {
     config.url = `${IMGUR_URL}${apiCall}`;
     console.log('config.url: ', config.url);
 
@@ -25,7 +25,7 @@ module.exports.getImages = async function (apiCall) {
     }
 };
 
-module.exports.getUser = async function (apiCall) {
+export const getUser = async (apiCall) => {
     config.url = `${IMGUR_URL}${apiCall}`;
     console.log('config.url: ', config.url);
 

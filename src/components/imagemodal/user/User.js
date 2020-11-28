@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { showUser } from '../../../store/actionCreator';
+import { showUser } from '../../../store/actions';
 import styles from './User.module.css';
 
 const User = ({ id, username }) => {
