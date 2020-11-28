@@ -1,7 +1,3 @@
-/* export const GET_IMAGES = 'GET_IMAGES';
-export const GET_USER = 'GET_USER'; */
-
-// import { GET_IMAGES, GET_USER } from './actions.js';
 import { getImages, getUser } from '../api/imgur';
 
 export const showImages = (section, sort, window, showViral) => {
