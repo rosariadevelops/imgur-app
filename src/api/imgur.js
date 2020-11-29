@@ -7,6 +7,9 @@ const IMGUR_URL = 'https://api.imgur.com/3/';
 let config = {
     method: 'get',
     url: `${IMGUR_URL}`,
+    headers: {
+        Authorization: `Client-ID 6bf8c72b82090cd`,
+    },
     data: data,
 };
 
