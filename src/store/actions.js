@@ -1,12 +1,12 @@
 import { getImages, getUser } from '../api/imgur';
 
-export const showImages = (section, sort, window, showViral) => {
+export const showImages = (section, sort, window, showViral, page) => {
     let urlParameters = '';
 
     if (window) {
-        urlParameters = `gallery/${section}/${window}?showViral=${showViral}`;
+        urlParameters = `gallery/${section}/${window}/${page}?showViral=${showViral}`;
     } else {
-        urlParameters = `gallery/${section}/${sort}?showViral=${showViral}`;
+        urlParameters = `gallery/${section}/${sort}/${page}?showViral=${showViral}`;
     }
 
     return (dispatch) => {
