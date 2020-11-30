@@ -42,14 +42,14 @@ const Gallery = (props) => {
         console.log('paramsCallback: ', `${a}, ${b}, ${c}, ${d}`);
     }
 
-    window.onscroll = () => {
+    /* window.onscroll = () => {
         if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
             if (!noData) {
                 setPage(page + 1);
                 console.log('reached bottom of page');
             }
         }
-    };
+    }; */
 
     useEffect(() => {
         dispatch(showImages(sectionParam, sortParam, windowParam, showViral, page));
@@ -57,9 +57,7 @@ const Gallery = (props) => {
 
     return (
         <div className={styles.imgurGallery}>
-            <div className={styles.gradientUnderlay}>
-                <div className={styles.bgBanner}></div>
-            </div>
+            <div className={styles.gradientUnderlay}>{/* <div className={styles.bgBanner}></div> */}</div>
             <h1>Imgur Gallery</h1>
             <div className={styles.logo}>
                 <img src={imgurLogo} alt="logo" width="90" />
